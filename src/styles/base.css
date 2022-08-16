@@ -1,0 +1,20 @@
+button,body,ul,li,a,input,textarea,h1,h2,h3,h4,h5,h6{
+    border: none;
+    margin: 0%;
+    padding: 0%;
+}
+button,a{
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+}
+
+
+html{
+    font-size: 1rem;
+}
+
+
+input,textarea{
+    background-color: #ffffff;
+}

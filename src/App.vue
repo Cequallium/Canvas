@@ -1,30 +1,70 @@
+<script setup>
+    import Home from "./views/Index.vue";
+import Footer from "./components/Footer.vue";
+</script>
+
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <Home/>
+  <Footer/>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+    @import url('@/styles/base.css');
+      body{
+        height: 100vh;
+      }
+    :root{
+        --white:#f4f4f4;
+        --black:#1a1c2c;
 
-nav {
-  padding: 30px;
-}
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+        --red:#b13e53;
+        --maroon:#5d275d;
 
-nav a.router-link-exact-active {
-  color: #42b983;
-}
+
+        --orange:#ef7d57;
+        --yellow:#ffcd75;
+
+
+        --green:#a7f070;
+        --green2:#38b764;
+        --green3:#257179;
+
+
+        --blue:#73eff7;
+        --blue2:#41a6f6;
+
+
+        --blue3:#3b5dc9;
+        --blue4:#29366f;
+
+
+        --grey:#94b0c2;
+        --grey2:#566c86;
+        --grey3:#333c57;
+    }
+    html{
+        color:var(--white) !important;
+        font-family: consoleBold;
+    }
+    ::selection{
+        background-color: var(--green2);
+        color: var(--white);
+    }
+    @font-face{
+        font-family: consoleRegular;
+        src: 
+            url('@/assets/BrokenConsole-Regular.otf')
+            format('opentype');
+    }
+    @font-face{
+        font-family: consoleBold;
+        src: 
+            url('@/assets/BrokenConsole-Bold.otf')
+            format('opentype');
+    }
+    body{
+        height: calc(100vh-11vh);
+        background-color: var(--white);
+    }
 </style>
