@@ -1,19 +1,27 @@
-# canvas
+<h2 align="center"> 
 
-## Project setup
-```
-npm install
-```
+    Canvas
+</h2>
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+<h4 align="center">    
 
-### Compiles and minifies for production
-```
-npm run build
-```
+    an open source r/place clone
+</h4>
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Installation:
+
+**1** - Clone the repository
+```bash
+git clone https://github.com/Cequallium/Canvas.git && cd Canvas
+```
+**2** - Then install the dependencies
+```bash
+npm i
+```
+**3** - Run dev server 
+```bash
+npx vue-cli-service serve
+```
+---
+<h4 align="center"> 🖌🎨</h4>
